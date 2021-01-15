@@ -1,10 +1,142 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <title>About Me</title>
+        <title>Andy's User Page - CSE 110 Lab 2</title>
+        <link rel="shortcut icon" type="image/png" href="favicon.png">
     </head>
     <body>
-        <header></header>
-        <main></main>
+        <header>
+            <h1>Andy's User Page - CSE 110 Lab 2</h1>
+            <h2>Table Of Contents</h2>
+            <nav>
+                <ul>
+                    <li><a href="#">Introduction</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h3>Introduction</h3>
+                <img src="#" alt="Pic of me!">
+                <a href="headshot.png">Source (Relative Link)</a>
+                <p>
+                    Hey! I’m Andy Young, a second year Computer Engineering major from Honolulu, Hawaii! I’ve been programming as a hobby
+                    since my freshman year of high school and am lucky to have gained a lot of software and web development experiences and
+                    skills as a result. I’m very grateful to be able to pursue my passion as a career and solve all interesting problems the
+                    field has to offer.
+                </p>
+            </section>
+            <section>
+                <h3>Projects</h3>
+                <p>
+                    Since there are requirements I have to fill for this assignment, I figured I could just include a few of my projects
+                    from my resume to knock some of them down:
+                </p>
+                <ul>
+                    <li>
+                        <a href="https://torystimesheet.com/">Tory Roofing</a>
+                        <ul>
+                            <li>
+                                Automated and digitized Tory Roofing’s employee/job management system and payroll process by developing a webapp using
+                                <b>Ruby on Rails</b> that allows foreman to submit timesheets on an intuitive mobile UI and managers to review and
+                                automatically perform the payroll every week.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://chrome.google.com/webstore/detail/opgg-summoner-search/dfnoddgekoeiljeaekobnchnedoipgpc?hl=en">OP.GG Search</a>
+                        <ul>
+                            <li>
+                                Created a Chrome extension with <b>JavaScript</b> as a freshman in high school, which currently has 5,000+ users, that adds
+                                extra features to a League of Legends statistics website.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Hawaii Food</h3>
+                <p>
+                    Enough with the programming stuff, here are my top 5 favorite places to eat in Hawaii (this list changes frequently):
+                </p>
+                <ol>
+                    <li>Off the Hook (Poke)</li>
+                    <li>Kam Bowl (Oxtail Soup)</li>
+                    <li>Mitch’s Fish Market (Sashimi, Obama Approved)</li>
+                    <li>Giovanni’s Shrimp Truck</li>
+                    <li><del>Waiola Shave Ice</del> Matsumoto Shave Ice</li>
+                </ol>
+            </section>
+            <section>
+                <h3>Video Games</h3>
+                <p>
+                    To demonstrate unordered lists, here are some video games that I like to play!
+                    <ul>
+                        <li><i>League of Legends</i></li>
+                        <li><i>Counter Strike: Global Offensive</i></li>
+                        <li><i>Valorant</i></li>
+                        <li><i>Stardew Valley</i></li>
+                    </ul>
+                </p>
+            </section>
+            <section>
+                <h3>New Year’s Bucket List</h3>
+                <p>
+                    Because of how badly I’ve personally responded to quarantine, instead of having a list of New Year’s resolutions, I have
+                    a very low-expectation bucket list for this year that’ll hopefully help push me to getting my life back together:
+                </p>
+                <ul>
+                    <li>
+                        <input type="checkbox" checked disabled>
+                        <label>Attend a remote class</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" disabled>
+                        <label>Surf</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" disabled>
+                        <label>Go to the gym</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked disabled>
+                        <label>Refuse to eat junk food when tempted</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" disabled>
+                        <label>Write a line of code in Haskell</label>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>SWE Advice</h3>
+                <p>
+                    Here’s a wise quote:
+
+                    <blockquote>
+                        <i>Code is read more often than it is written.</i>
+                    </blockquote>
+
+                    Not sure who said it first, but it’s definitely been said and at least thousands of times by many different which makes
+                    me wonder why there is still so much bad code… Consider this snippet below, written “cleanly” by me because it takes up
+                    “such few lines”, can you tell what it does?
+
+                    <pre><code>
+    dp = [0] * (target + 1)
+    dp[0] = 1
+
+    for i in range(1, len(dp)):
+    for n in nums:
+    if n <= i: dp[i] +=dp[i - n] return dp[target]
+                    </code></pre>
+
+                    You probably can’t, and neither can I! If there were a bug in it I honestly wouldn’t be able to find, let alone fix it.
+                    I went through a phase of <em>over</em> optimizing everything while not commenting, wrongly thinking that less lines of code =
+                    cleaner which bit me in the ass enough for me to stop that habit. My one advice to anyone who reads this and doesn’t
+                    already is <strong>COMMENT!</strong>
+                </p>
+            </section>
+        </main>
         <footer></footer>
     </body>
 </html>
