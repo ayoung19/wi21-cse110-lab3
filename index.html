@@ -76,13 +76,13 @@
                 <h2>Video Games</h2>
                 <p>
                     To demonstrate unordered lists, here are some video games that I like to play!
-                    <ul>
-                        <li><i>League of Legends</i></li>
-                        <li><i>Counter Strike: Global Offensive</i></li>
-                        <li><i>Valorant</i></li>
-                        <li><i>Stardew Valley</i></li>
-                    </ul>
                 </p>
+                <ul>
+                    <li><i>League of Legends</i></li>
+                    <li><i>Counter Strike: Global Offensive</i></li>
+                    <li><i>Valorant</i></li>
+                    <li><i>Stardew Valley</i></li>
+                </ul>
             </section>
             <section>
                 <h2>New Year’s Bucket List</h2>
@@ -117,27 +117,27 @@
                 <h2>SWE Advice</h2>
                 <p>
                     Here’s a wise quote:
-
+                </p>
                     <blockquote>
                         <i>Code is read more often than it is written.</i>
                     </blockquote>
-
+                <p>
                     Not sure who said it first, but it’s definitely been said and at least thousands of times by many different which makes
                     me wonder why there is still so much bad code… Consider this snippet below, written “cleanly” by me because it takes up
                     “such few lines”, can you tell what it does?
-
-                    <pre><code>
+                </p>
+                <pre><code>
     dp = [0] * (target + 1)
     dp[0] = 1
 
     for i in range(1, len(dp)):
         for n in nums:
-            if n <= i:
+            if n &lt;= i:
                 dp[i] +=dp[i - n]
     
     return dp[target]
-                    </code></pre>
-
+                </code></pre>
+                <p>
                     You probably can’t, and neither can I! If there were a bug in it I honestly wouldn’t be able to find, let alone fix it.
                     I went through a phase of <em>over</em> optimizing everything while not commenting, wrongly thinking that less lines of code =
                     cleaner which bit me in the ass enough for me to stop that habit. My one advice to anyone who reads this and doesn’t
