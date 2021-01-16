@@ -13,6 +13,23 @@
             <nav>
                 <ul>
                     <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#hawaii-food">Hawaii Food</a></li>
+                    <li><a href="#video-games">Video Games</a></li>
+                    <li><a href="#new-years-bucket-list">New Year's Bucket List</a></li>
+                    <li><a href="#swe-advice">SWE Advice</a></li>
+                    <li>
+                        <a href="#other">Other</a>
+                        <ul><li><a href="#classes">Classes</a></li></ul>
+                        <ul><li><a href="#faq">FAQ</a></li></ul>
+                        <ul><li><a href="#lab-1">Lab 1</a></li></ul>
+                        <ul><li><a href="#opgg-search">OP.GG Search Demo</a></li></ul>
+                        <ul><li><a href="#a-song-i-like">A Song I Like</a></li></ul>
+                        <ul><li><a href="#canvas">Canvas</a></li></ul>
+                        <ul><li><a href="#tory-roofing-ui">Tory Roofing UI</a></li></ul>
+                        <ul><li><a href="#form">Form</a></li></ul>
+                        <ul><li><a href="#add-more">Add More Articles</a></li></ul>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -31,7 +48,7 @@
                     field has to offer.
                 </p>
             </section>
-            <section>
+            <section id="projects">
                 <h2>Projects</h2>
                 <p>
                     Since there are requirements I have to fill for this assignment, I figured I could just include a few of my projects
@@ -59,7 +76,7 @@
                     </li>
                 </ul>
             </section>
-            <section>
+            <section id="hawaii-food">
                 <h2>Hawaii Food</h2>
                 <p>
                     Enough with the programming stuff, here are my top 5 favorite places to eat in Hawaii (this list changes frequently):
@@ -72,7 +89,7 @@
                     <li><del>Waiola Shave Ice</del> Matsumoto Shave Ice</li>
                 </ol>
             </section>
-            <section>
+            <section id="video-games">
                 <h2>Video Games</h2>
                 <p>
                     To demonstrate unordered lists, here are some video games that I like to play!
@@ -84,7 +101,7 @@
                     <li><i>Stardew Valley</i></li>
                 </ul>
             </section>
-            <section>
+            <section id="new-years-bucket-list">
                 <h2>New Year’s Bucket List</h2>
                 <p>
                     Because of how badly I’ve personally responded to quarantine, instead of having a list of New Year’s resolutions, I have
@@ -113,7 +130,7 @@
                     </li>
                 </ul>
             </section>
-            <section>
+            <section id="swe-advice">
                 <h2>SWE Advice</h2>
                 <p>
                     Here’s a wise quote:
@@ -150,7 +167,7 @@
                     This section is dedicated to extra content not included in my first lab to demonstrate my semantic usage of the required HTML
                     tags!
                 </p>
-                <article>
+                <article id="classes">
                     <h3>Classes</h3>
                     <table>
                         <caption>WI21 Classes</caption>
@@ -196,7 +213,7 @@
                         *A very cool class!
                     </aside>
                 </article>
-                <article>
+                <article id="faq">
                     <h3>FAQ</h3>
                     <details>
                         <summary>What's your favorite color?</summary>
@@ -223,25 +240,25 @@
                         Yeah.
                     </details>
                 </article>
-                <article>
+                <article id="lab-1">
                     <h3>Lab 1</h3>
                     <iframe src="https://www.andyluyoung.com/cse110-lab1/" title="CSE 110 Lab 1!"></iframe>
                 </article>
-                <article>
+                <article id="opgg-search">
                     <h3>OP.GG Search Demo</h3>
                     <video controls>
                         <source src="opgg.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </article>
-                <article>
+                <article id="a-song-i-like">
                     <h3>A Song I Like</h3>
                     <audio controls>
                         <source src="lml.mp3" type="audio/mp3">
                         Your browser does not support the audio element.
                     </audio>
                 </article>
-                <article>
+                <article id="canvas">
                     <h3>Canvas</h3>
                     <canvas width="200" height="200"></canvas>
                     <script>
@@ -251,14 +268,14 @@
                         ctx.fillRect(0, 0, canvas.width, canvas.height);
                     </script>
                 </article>
-                <article>
+                <article id="tory-roofing-ui">
                     <h3>Tory Roofing UI</h3>
                     <figure>
                         <img src="tory.png" alt="Tory UI" width="400">
                         <figcaption>Fig.1 - UI of Tory Roofing Website</figcaption>
                     </figure>
                 </article>
-                <article>
+                <article id="form">
                     <h3>Form</h3>
                     <form action="/action_page.php">
                         <fieldset>
@@ -404,23 +421,23 @@
                         <input type="reset">
                     </form>
                 </article>
-                <article>
+                <article id="add-more">
                     <h3>Add More Articles</h3>
                     <button onclick="addArticle();">Add</button>
+                    <template>
+                        <article>
+                            <h3>Article Title</h3>
+                            <p>Content</p>
+                        </article>
+                    </template>
+                    <script>
+                        function addArticle() {
+                            var template = document.querySelector("template");
+                            var article = template.content.cloneNode(true);
+                            document.querySelector("#other").appendChild(article);
+                        }
+                    </script>
                 </article>
-                <template>
-                    <article>
-                        <h3>Article Title</h3>
-                        <p>Content</p>
-                    </article>
-                </template>
-                <script>
-                    function addArticle() {
-                        var template = document.querySelector("template");
-                        var article = template.content.cloneNode(true);
-                        document.querySelector("#other").appendChild(article);
-                    }
-                </script>
             </section>
         </main>
         <footer>
