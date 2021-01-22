@@ -6,6 +6,38 @@
         <link rel="stylesheet" href="css/main.css" type="text/css">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <meta charset="UTF-8">
+        <style>
+            #title h1 {
+                margin-bottom: 0;
+            }
+
+            #title div + div {
+                margin-bottom: 2rem;
+            }
+
+            #title div + div ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            @media only screen and (min-width: 48pc) {
+                div#title {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                div#title div ~ div {
+                    margin-bottom: 0;
+                }
+
+                div#title div ~ div ul li {
+                    text-align: right;
+                }
+            }
+        </style>
     </head>
     <body>
         <div class="responsive-container">
@@ -225,7 +257,7 @@
                         <table>
                             <caption>WI21 Classes</caption>
                             <colgroup>
-                                <col style="background-color: #9FA8DA;">
+                                <col style="background-color: hsla(232, 44%, 74%, .9);">
                                 <col style="background-color: #90CAF9;">
                                 <col style="background-color: #80CBC4">
                             </colgroup>
