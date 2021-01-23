@@ -111,6 +111,30 @@ section > h2 {
 
 #opgg-search video, #tory-roofing-ui img {
     max-width: 100%;
+    min-width: 50%;
+}
+
+#classes-grid {
+    display: grid;
+    grid-template-rows: repeat(6);
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 2px;
+}
+
+#classes-grid div:nth-child(3n + 1) {
+    background-color: hsla(232, 44%, 74%, .9);
+}
+
+#classes-grid div:nth-child(3n + 2) {
+    background-color: #90CAF9;
+}
+
+#classes-grid div:nth-child(3n + 3) {
+    background-color: #80CBC4;
+}
+
+#classes-grid ~ table {
+    display: none;
 }
 
 /*
