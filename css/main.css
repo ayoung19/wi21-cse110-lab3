@@ -70,13 +70,47 @@ section > h2 {
     font-weight: 600;
 }
 
+#github-corner {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#github-corner .bg {
+    fill: #7E8BE4;
+}
+
+#github-corner .octocat {
+    fill: #ffffff;
+}
+
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#back-to-top > img {
+    width: 50px;
+    height: 51px;
+}
+
 .hide {
     display: none;
 }
 
 .responsive-container {
     width: 100%;
-    margin: 0 auto;
+    margin-top: 0;
+    margin-left: auto;
+    margin-bottom: 0;
+    margin-right: auto;
+}
+
+#opgg-search video, #tory-roofing-ui img {
+    max-width: 100%;
 }
 
 /*
@@ -86,6 +120,14 @@ section > h2 {
 @media only screen and (min-width: 48pc) {
     .responsive-container {
         width: 45pc;
+    }
+    
+    #github-corner {
+        display: block;
+    }
+
+    #back-to-top {
+        display: block;
     }
 }
 
